@@ -4,24 +4,24 @@
 using std::cout;
 using std::format;
 
-/*
-
-  CHAPTER 4 CHALLENGE - LIBRARY CARD
-
-  Data type layout:
-
-  Title -> string -> cout << format("Label: {}\n", string);
-  Author -> string -> cout << format("Label: {}\n", string);
-  Publisher -> string -> cout << format("Label: {}\n", string);
-  Subject -> string -> cout << format("Label: {}\n", string);
-  ISBN -> string -> cout << format("Label: {}\n", string);
-  WorldCat (OCLC) -> int -> cout << format("Label: {}\n", int);
-  Dewey Decimal -> int -> cout << format("Label: {}\n", int);
-  Year Published -> int -> cout << format("Label: {}\n", int);
-  Year Acquired -> int -> cout << format("Label: {}\n", int);
-  Quantity in stock -> int -> cout << format("Label: {}\n", int);
-
-  */
+/***********************************************
+ *
+ *  CHAPTER 4 CHALLENGE - LIBRARY CARD
+ *
+ *  Data type layout:
+ *
+ *  Title -> string -> cout << format("Label: {}\n", string);
+ *  Author -> string -> cout << format("Label: {}\n", string);
+ *  Publisher -> string -> cout << format("Label: {}\n", string);
+ *  Subject -> string -> cout << format("Label: {}\n", string);
+ *  ISBN -> string -> cout << format("Label: {}\n", string);
+ *  WorldCat (OCLC) -> int -> cout << format("Label: {}\n", int);
+ *  Dewey Decimal -> int -> cout << format("Label: {}\n", int);
+ *  Year Published -> int -> cout << format("Label: {}\n", int);
+ *  Year Acquired -> int -> cout << format("Label: {}\n", int);
+ *  Quantity in stock -> int -> cout << format("Label: {}\n", int);
+ *
+ ************************************************/
 
 struct catalog_card
 {
