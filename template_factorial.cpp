@@ -6,9 +6,9 @@ using std::format;
 
 /***********************************************
  *
- *  CHAPTER 6 CHALLENGE - NON RECURSEIVE FACTORIAL
+ *  CHAPTER 8 CHALLENGE - NON RECURSEIVE FACTORIAL
  *
- *  Create a non-recursive funcion for calculating factorials
+ *  Build off of Chapter 6 challenge, and create a a template version of the non-recursive factorial funcion
  *
  *  Example of recursive function below:
  *
@@ -27,7 +27,8 @@ using std::format;
  *
  ************************************************/
 
-unsigned long factorial(unsigned long n)
+template <typename T>
+T factorial(T n)
 {
   auto result = n;
   while (n > 1)
@@ -39,6 +40,12 @@ unsigned long factorial(unsigned long n)
 
 int main()
 {
-  unsigned long n{6};
-  cout << format("Factorial of {} is {}\n", n, factorial(n));
+  int i{5};
+  cout << format("Factorial of {} is {}\n", i, factorial(i));
+
+  long long unsigned int longer_number{15};
+  cout << format("Factorial of {} is {}\n", longer_number, factorial(longer_number));
+
+  long double longest_number{25};
+  cout << format("Factorial of {} is {:-4.5}\n", longest_number, factorial(longest_number));
 }
